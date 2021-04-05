@@ -1,6 +1,6 @@
 # Terraform AWS MWAA Quick Start
 
-Quick start tutorial for Amazon Managed Workflows for Apache Airflow (MWAA) with Terraform. This is a word for word translation of the official [AWS quick start](https://docs.aws.amazon.com/mwaa/latest/userguide/quick-start.html)(with CloudFormation).
+Quick start tutorial for Amazon Managed Workflows for Apache Airflow (MWAA) with Terraform. This is a word for word translation of the official [AWS quick start](https://docs.aws.amazon.com/mwaa/latest/userguide/quick-start.html) (with CloudFormation).
 
 ## Terraform support for MWAA
 
@@ -31,6 +31,10 @@ make build
 mkdir -p ~/.terraform.d/plugins/registry.github.com.local/shuheiktgw/aws/1.0.0/darwin_amd64
 cp ~/go/bin/terraform-provider-aws ~/.terraform.d/plugins/registry.github.com.local/shuheiktgw/aws/1.0.0/darwin_amd64/terraform-provider-aws_v1.0.0
 ```
+
+### Update
+
+Istead of compiling them yourself, you can also grab those executables from [here](https://github.com/CapChrisCap/terraform-provider-aws/releases/tag/mwaa).
 
 ## Variables
 
