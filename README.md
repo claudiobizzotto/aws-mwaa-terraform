@@ -62,6 +62,7 @@ There's a test DAG file inside the local [`dags` directory](./dags), which was t
 ## Usage
 
 ```bash
+terraform init
 terraform fmt
 terraform validate
 terraform plan
