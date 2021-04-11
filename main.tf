@@ -141,8 +141,6 @@ resource "aws_iam_role_policy_attachment" "iam_role_policy_attachment" {
 }
 
 resource "aws_mwaa_environment" "mwaa_environment" {
-  provider = awsmwaa
-
   source_bucket_arn     = aws_s3_bucket.s3_bucket.arn
   dag_s3_path           = "dags"
   execution_role_arn    = aws_iam_role.iam_role.arn

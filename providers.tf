@@ -6,12 +6,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.19.0"
-    }
-
-    awsmwaa = {
-      source  = "registry.github.com.local/shuheiktgw/aws"
-      version = "~> 1.0.0"
+      version = ">= 3.36.0"
     }
   }
 
@@ -19,9 +14,5 @@ terraform {
 }
 
 provider "aws" {
-  region = var.region
-}
-
-provider "awsmwaa" {
   region = var.region
 }
