@@ -5,6 +5,11 @@ variable "region" {
   description = "AWS region where resources will be deployed."
 }
 
+variable "profile" {
+  type        = string
+  description = "AWS profile to be used."
+}
+
 variable "prefix" {
   type        = string
   description = "A prefix to use when naming resources."
@@ -29,8 +34,4 @@ variable "mwaa_max_workers" {
   type        = number
   description = "Maximum number of MWAA workers."
   default     = 2
-}
-
-variable "aws_profile" {
-  type = string
 }
