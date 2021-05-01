@@ -24,3 +24,7 @@ output "mwaa_environment_arn" {
   value       = aws_mwaa_environment.mwaa_environment.arn
   description = "ARN of MWAA environment."
 }
+
+output "mwaa_webserver_url" {
+  value = aws_mwaa_environment.mwaa_environment.webserver_url
+}
