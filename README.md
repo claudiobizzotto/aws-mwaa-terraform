@@ -7,8 +7,9 @@ Quick start tutorial for Amazon Managed Workflows for Apache Airflow (MWAA) with
 Below is an example `terraform.tfvars` file that you can use in your deployments:
 
 ```ini
-region   = "us-east-1"
-prefix   = "my-mwaa"
+region   = "eu-central-1"
+profile  = "airflow"
+prefix   = "airflow"
 vpc_cidr = "10.192.0.0/16"
 public_subnet_cidrs = [
   "10.192.10.0/24",
