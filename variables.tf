@@ -32,5 +32,5 @@ variable "mwaa_max_workers" {
 }
 
 variable "aws_profile" {
-  type    = string
+  type = string
 }
