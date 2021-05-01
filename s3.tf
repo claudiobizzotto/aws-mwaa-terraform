@@ -1,7 +1,11 @@
 # MWAA S3
 
+resource "random_id" "id" {
+  byte_length = 2
+}
+
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = var.prefix
+  bucket = "${var.prefix}-${random_id.id.hex}"
 
   versioning {
     enabled = true
