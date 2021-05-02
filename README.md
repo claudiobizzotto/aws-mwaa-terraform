@@ -2,6 +2,8 @@
 
 Quick start tutorial for Amazon Managed Workflows for Apache Airflow (MWAA) with Terraform. This is a word for word translation of the official [AWS quick start](https://docs.aws.amazon.com/mwaa/latest/userguide/quick-start.html) (with CloudFormation).
 
+The recommended way to deploy MWAA's web server in production is to place it inside a private network (managed by AWS). Check [aws-mwaa-terraform-private](https://github.com/claudiobizzotto/aws-mwaa-terraform-private) to see how that can be done.
+
 ## Variables
 
 Below is an example `terraform.tfvars` file that you can use in your deployments:
