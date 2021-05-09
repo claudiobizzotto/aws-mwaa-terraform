@@ -35,4 +35,9 @@ terraform fmt
 terraform validate
 terraform plan
 terraform apply
+terraform destroy
 ```
+
+## Links
+
+* For an example of a GitHub Action that syncs the DAGs subfolder automatically to S3, check [stelsemeyer's implementation](https://github.com/stelsemeyer/aws-mwaa-terraform).
